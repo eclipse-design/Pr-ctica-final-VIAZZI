@@ -1,0 +1,503 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo {
+    font-size: 2em;
+    color: #fff;
+    user-select: none;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(fedeimagen.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+h2{
+    
+    
+color: #162938;
+margin-bottom: 10px;
+font-size: 1.3em;
+margin-left: 20px;
+font-weight: bold;
+font-style: italic;
+margin-left: -20px;
+
+}
+h5{
+    color: #162938;
+margin-bottom: 10px;
+font-size: 1.3rem;
+margin-left: 20px;
+font-weight: bold;
+font-style: italic;
+margin-left: -20px;
+display:flex;
+justify-content: center;
+margin-left: 0px;
+}
+input#usuario{
+    margin-left: 0px;
+}
+
+input#contraseña{
+    margin-left: 0px;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.navigation .btnIngreso-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+.navigation .btnIngreso-popup:hover {
+    background: #fff;
+    color: #162938;
+}
+
+.wrapper {
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.wrapper .icon-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: #162938;
+    font-size: 2em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+
+}
+
+.wrapper .form-box {
+    width: 100%;
+    padding: 40px;
+}
+
+.wrapper .icon-close{
+    position: absolute;
+    top:0;
+    right:0;
+    width:45px;
+    height: 45px;
+}
+
+.form-box h2 {
+    font-size: 2em;
+    color: #162938;
+    text-align: center;
+}
+
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #162938;
+    margin: 30px 0;
+
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #162938;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline:none;
+}
+
+
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+}
+
+.box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #162938;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+
+}
+
+.input-box .icon {
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: #162938;
+    line-height: 57px;
+
+}
+
+
+
+.btn {
+    width: 100%;
+    height: 45px;
+    background: #162938;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+    margin-top: 30px;
+
+}
+
+
+
+html {
+    font-size: 62, 5%;
+}
+
+.container {
+    background-color: #f5f3f5;
+    margin-top: 100px;
+    
+   
+}
+.container nav {
+    width: 100%;
+    padding: -100px;
+    background: transparent;
+    color: #333;
+    
+}
+.container h1  {
+    margin-bottom: 5px;
+    color: #33c3f0;
+    background-color: #333;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 280px);
+    margin: auto;
+    max-width: 1100px;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    padding-bottom: 50px;
+    justify-content: center;
+    background-color: #646363;
+    
+}
+
+.items{
+    background-color: #fff;
+    border: solid thin #e1e1e1;
+}
+
+footer{
+   position: absolute;
+    bottom: 0;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+    z-index: 99;
+
+}
+nav.navigation{
+    bottom:0;
+
+}
+
+
+div.footer-content {
+    color: #000000;
+    font-weight: bolder;
+    position:absolute;
+    justify-content: center;
+background-color: rgb(255, 0, 0);
+letter-spacing:2px;
+width:100%;
+bottom:0;
+display:grid;
+margin-bottom:-450px;
+ font-size:1rem;
+ height: 100px;
+}
+
+
+
+.items img {
+    width: 277.5px;
+    height: 230px;
+}
+
+.info {
+    padding: 15px;
+    background-color:#acabab;
+
+}
+
+.info h3 {
+    font-size: 1rem;
+   align-content: center;
+
+}
+
+.info p {
+    font-size: 1rem;
+
+}
+
+.info h3,
+.info p {
+    color: #222;
+    margin: 10px;
+}
+
+.precio p:first-child {
+    text-decoration: line-through;
+}
+
+.precio {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bolder;
+}
+
+.precio p{
+    font-size:1.4rem;
+}
+
+.info button {
+    padding: .5rem;
+    width: 100%;
+    background-color: #33c3f0;
+    border: none;
+    outline: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: -5px;
+
+}
+
+.info button:hover {
+    background-color: #2da0c3;
+    transition: all .3s;
+}
+
+div.wrapper1{
+position: relative;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 30px;
+    
+}
+form#compraForm{ margin:100px;
+    text-align: justify;
+}
+
+
+input#nombre{
+    color: #162938;
+    padding:2px;
+    padding-left: 100px;
+    text-align: justify;
+    padding:1px;
+padding-right: 101px;
+}
+input#direccion{
+    color: #162938;
+    padding:2px;
+    padding-left: 100px;
+    margin-top:5px;
+    text-align: justify;
+    display:flex;
+    padding:1px;
+padding-right: 101px;
+}
+input#calle{
+    color: #162938;
+    padding:2px;
+    padding-left: 100px;
+    margin-top:5px;
+    padding:1px;
+padding-right: 101px;
+    
+}
+input#numero{
+    color: #162938;
+    padding:2px;
+    padding-left: 100px;
+    margin-top:5px;
+    padding:1px;
+padding-right: 101px;
+}
+input{
+    color: #162938;
+    padding:2px;
+    padding-left: 100px;
+    margin-top:5px;
+    align-items:justify;
+    padding:1px;
+padding-right: 101px;
+   
+}
+input#CP{
+    color: #162938;
+    padding:2px;
+    padding-left: 100px;
+    margin-top:5px;
+    display:flex;
+    padding:1px;
+padding-right: 101px;
+}
+input#cantidad{
+    color: #162938;
+    padding:2px;
+    padding-left: 100px;
+    margin-top:5px;
+    padding:1px;
+padding-right: 101px;
+display:flex;
+    justify-content: center;
+
+}
+select#producto{
+    color: #162938;
+    padding:2px;
+    padding-left: 119px;
+    margin-top:5px;
+    display:flex;
+    justify-content: center;
+padding:1px;
+padding-right: 120px;
+    
+}
+.btn1{
+    width: 75%;
+    height: 45px;
+    background: #162938;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 200;
+    margin-top: 20px;
+    justify-content: center;
+    margin-left: 35px;
+    
+
+}
+
+h1{
+    
+    justify-content: center;
+    display:flex;
+}

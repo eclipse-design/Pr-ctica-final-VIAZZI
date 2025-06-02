@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Formulario de Compra</title>
+  <link rel="stylesheet" href="práctica final.css" />
+</head>
+<body>
+  <header>
+        <h2 class="logo">Logo</h2>
+        <nav class="navigation">
+            <a href="#">Home</a>
+            <a href="#">Sobre</a>
+            <a href="#">Servicios</a>
+            <a href="#">Contacto</a>
+            <button class="btnIngreso-popup" onclick="inicio()">Inicio</button>
+        </nav>
+    </header>
+   <div class="wrapper1">  
+    <form id="compraForm">
+      <h5>Formulario de compra</h5>
+      <input type="text" id="nombre" placeholder="Nombre" required />
+      <input type="text" id="direccion" placeholder="Dirección" required />
+<input type="text" id="calle" placeholder="Calle" required />
+<input type="text" id="numero" placeholder="Número" required />
+<input type="Localidad" placeholder="Localidad">
+        
+<input type="text" id="CP" placeholder="CP" required />
+      <select id="producto" required>
+        <option value="">Productos</option>
+        <option value="Silla de Cocina">Silla de Cocina</option>
+        <option value="Mesa Ratona">Mesa Ratona</option>
+        <option value="Escritorio Moderno">Escritorio Moderno</option>
+        <option value="Biblioteca">Biblioteca</option>
+        <option value="Sillón 3 cuerpos">Sillón 3 cuerpos</option>
+        <option value="Ropero">Ropero</option>
+      </select>
+
+      <input type="number" id="cantidad" placeholder="Cantidad" min="1" required />
+      <button type="submit" class="btn1" onclick="enviar()">Enviar</button>
+    </form>
+    </div>
+  </div>
+  </div>
+  <script src="finaljavascript.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    
+  </script>
+</body>
+</html>

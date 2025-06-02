@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mueblería</title>
+    <link rel="stylesheet" href="práctica final.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header>
+        <h2 class="logo">Logo</h2>
+        <nav class="navigation">
+            <a href="#">Sobre</a>
+            <a href="#">Servicios</a>
+            <a href="#">Contacto</a>
+            <button class="btnIngreso-popup" onclick="ingreso()">Ingreso</button>
+        </nav>
+    </header>
+    <div class="wrapper">
+        <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+        <div class="form-box Login">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="close-circle-outline"></ion-icon>
+                    </span>
+                    <input id="usuario" type="text" required>
+                    <label>Usuario</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="eye-off"></ion-icon>
+                    </span>
+                    <input id="contraseña" type="password" required>
+                    <label>Contraseña</label>
+                </div>
+
+
+            </form>
+            <button type="submit" class="btn" onclick="login()">Login</button>
+
+        </div>
+    </div>
+    </div>
+
+    <script src="finaljavascript.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
