@@ -23,6 +23,7 @@ header {
     font-size: 2em;
     color: #fff;
     user-select: none;
+
 }
 
 .navigation a {
@@ -52,6 +53,7 @@ color: #162938;
 margin-bottom: 10px;
 font-size: 1.3em;
 margin-left: 20px;
+margin-right: -20px;
 font-weight: bold;
 font-style: italic;
 margin-left: -20px;
@@ -242,6 +244,7 @@ input#contraseña{
     color: #fff;
     font-weight: 500;
     margin-top: 30px;
+    
 
 }
 
@@ -500,4 +503,20 @@ h1{
     
     justify-content: center;
     display:flex;
+}
+
+img:hover{
+    transform: scale(1.2);
+    transition-duration: 200ms;
+}
+
+button.btn:hover{
+    transform: scale(1.1);
+     transition-duration: 200ms;
+}
+
+
+form#compraForm:hover{
+    transform: scale(1.2);
+    transition-duration: 200ms;
 }
